@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Introduction</title>
+    <!-- Bootstrap CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Form -->
+
+    <div class="container mt-5">
+        <h2 class="text-center text-primary">Registration Form</h2>
+        <form class="border p-4 shadow-sm bg-light">
+
+            <div class="row">
+                <div class="col-6">
+                    <label for="first name" class="form-label">First Name</label>
+                    <input type="first name" class="form-control" id="first name" placeholder="Enter your first name">
+                </div>
+                <div class="col-6">
+                    <label for="last name" class="form-label">Last Name</label>
+                    <input type="last name" class="form-control" id="last name" placeholder="Enter your last name">
+                </div>
+            </div>
+
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control is-invalid" id="email" placeholder="Enter your email">
+                <div class="invalid-feedback">
+                    Email is required.
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control is-invalid" id="password" placeholder="Enter your password">
+                <div class="invalid-feedback">
+                    Password is required.
+                </div>
+            </div>
+            <div class="mb-3">
+                <input type="checkbox" id="form-check" value="form-check">
+                <label for="form-check">Agree to terms and conditions</label>
+            </div>
+
+            <button type="submit" class="btn btn-success">Submit</button>
+
+        </form>
+    </div>
+
+
+    <!-- Table -->
+
+    <div class="container mt-5">
+        <div class="table-responsive">
+            <h2 class="text-center text-primary">User Data</h2>
+
+
+            <table class="table table-striped table-hover border">
+                <thead class="table-dark">
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Jane Doe</td>
+                        <td>jane.doe@gmail.com</td>
+                        <td>Admin</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>John Smith</td>
+                        <td>john.smith@gmail.com</td>
+                        <td>User</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Sally Sue</td>
+                        <td>sally.sue@gmail.com</td>
+                        <td>User</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>George Geo</td>
+                        <td>george.geo@gmail.com</td>
+                        <td>User</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Images and Buttons-->
+
+    <div class="container-fluid mt-5">
+        <div class="row justify-content-center">
+            <div class="card">
+                <img class="img-fluid" alt="Airport Photo"
+                    src="https://img.freepik.com/free-photo/airport-terminal_1417-1456.jpg?t=st=1745446768~exp=1745450368~hmac=8fcd04ec5e729d8766fc1636660f541188f50002cf10b992487b4c78919b408d&w=1380">
+                <img class="rounded-circle" alt="circle"
+                    src="https://images.unsplash.com/photo-1542296332-2e4473faf563?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWlycG9ydHxlbnwwfHwwfHx8MA%3D%3D" />
+                <div class="card-body">
+                    <h5 class="card-title">When in doubt, fly out</h5>
+                    <p class="card-text">Traveling is very fun</p>
+                    <a href="#" class="btn btn-primary">Learn More about travel destinations</a>
+                    <button class="btn btn-danger d-none d-md-block">DO NOT PUSH ME</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
